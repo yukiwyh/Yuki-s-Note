@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:revisionCode="1"
+    android:versionName="1.0"
+    package="com.example.yukisnote" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_example.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="3" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.example.yukisnote" />
+
+        <meta-data android:value="b42c74e8c0105b2d5928f471a56c081e" android:name="BUG_HD_SDK_GENERAL_KEY" />
+
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.AddNoteActivity" />
+        <activity android:name=".ui.AboutActivity" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:theme="@style/settings" />
+        <activity android:name=".ui.TidyNoteActivity" />
+        <activity
+            android:name=".ui.AddNoteTypeActivity"
+            android:label="@string/title_activity_add_note_type" >
+        </activity>
+        <activity
+            android:name=".ui.FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".ui.PersonalActivity"
+            android:label="@string/title_activity_personal" >
+        </activity>
+    </application>
+
+</manifest>

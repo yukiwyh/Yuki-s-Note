@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/note_drawlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--main content view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/toolbar"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/note_swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/note_recycler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+                <com.melnykov.fab.FloatingActionButton
+                    android:id="@+id/note_add_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:padding="4dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ic_edit_white"
+                    app:fab_colorRipple="@color/blue_light"
+                    app:fab_colorNormal="@color/blue_light"/>
+                <include layout="@layout/toolbar_shadow_layout"/>
+                </FrameLayout>
+
+        </LinearLayout>
+
+        <!--drawer content view-->
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/personal_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:background="@color/blue_light"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:clickable="true">
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/avator"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            fresco:placeholderImage="@color/white"
+                            fresco:roundAsCircle="true"/>
+                        <TextView
+                            android:id="@+id/useravatorname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="辉"
+                            android:textSize="25sp"
+                            android:textColor="@color/blue_light"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:text="王钰辉"/>
+
+                <TextView
+                    android:id="@+id/sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="留下你的座右铭吧"/>
+
+            </LinearLayout>
+            <ListView
+                android:id="@+id/note_type_list"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_light"/>
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@color/white">
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/tidyMenu"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:textColor="@color/black"
+
+                android:background="@color/white"
+                android:text="整理笔记本"/>
+            </FrameLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yukisnote.ui.PersonalActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/username"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_textColor="@color/blue_light"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/sign"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_textColor="@color/blue_light"/>
+
+            <GridView
+                android:layout_margin="40dp"
+                android:id="@+id/colorchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"/>
+            </LinearLayout>
+
+        <include layout="@layout/toolbar_shadow_layout"/>
+        </FrameLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

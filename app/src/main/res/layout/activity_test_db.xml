@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yukisnote.test.TestDbActivity">
+
+   <Button
+       android:id="@+id/createitem"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="createitem"/>
+    <Button
+        android:id="@+id/testquery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="query"/>
+
+    <Button
+        android:id="@+id/testedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit"/>
+
+    <Button
+        android:id="@+id/starthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"/>
+    <Button
+        android:id="@+id/testdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"/>
+    <Button
+        android:id="@+id/testdeleteall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deleteall"/>
+    <Button
+        android:id="@+id/createdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textcreatedraw"/>
+    <Button
+        android:id="@+id/clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cleanALL"/>
+    <EditText
+        android:id="@+id/notetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/createnewdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="createdraw"/>
+
+</LinearLayout>

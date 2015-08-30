@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_light">#039be5</color>
+    <color name="blue_dark">#0277bd</color>
+
+    <color name="red">#E51C23</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_dark">#eceff1</color>
+    <color name="drawer_scrim_color">#88080808</color>
+    <color name="grey">#727272</color>
+    <color name="grey_light">#E2E2E2</color>
+    <color name="dark_grey">#FF080808</color>
+    <color name="pink">#ffa7d8f4</color>
+    <color name="green">#5af158</color>
+
+    <color name="black">#000000</color>
+</resources>

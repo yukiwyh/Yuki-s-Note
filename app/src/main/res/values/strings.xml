@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Yuki\'s Note</string>
+    <string name="more">更多</string>
+    <string name="setting">设置</string>
+    <string name="search">搜索</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <!--<string name="title_activity_add_note">AddNoteActivity</string>-->
+    <string name="title">标题</string>
+    <string name="content">内容</string>
+    <string name="submit">提交</string>
+    <string name="edit">编辑</string>
+    <string name="type">分类</string>
+    <string name="username">骚气的昵称</string>
+    <string name="sign">座右铭</string>
+    <string name="movetoother">移至其他分组</string>
+    <string name="delete">永久删除</string>
+
+
+    <!--setting-->
+    <string name="normal">常规设置</string>
+    <string name="other">其他</string>
+    <string name="right_key">right_model</string>
+    <string name="right">右手模式</string>
+    <string name="right_summary">开启右手模式，菜单将从右边滑出</string>
+    <string name="advice_key">advice_callback</string>
+    <string name="advice">意见反馈</string>
+    <string name="advice_summary">将意见反馈给作者，作者会虚心接受的</string>
+    <string name="card_key">card_model</string>
+    <string name="card">贴片模式</string>
+    <string name="contact">联系方式(邮箱、QQ号等)</string>
+    <string name="advice_content">写下您的需求和建议</string>
+
+
+    <!--time Util-->
+    <string name="today" formatted="false">今天\u0020%s</string>
+    <string name="before_day" formatted="false">%d\u0020天前</string>
+    <string name="before_month" formatted="false">%d\u0020个月前</string>
+    <string name="before_year" formatted="false">%d\u0020年前</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_test_db">TestDbActivity</string>
+    <string name="title_activity_tidy_note">TidyNoteActivity</string>
+    <string name="test">选择类型</string>
+    <string name="title_activity_add_note_type">AddNoteTypeActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+
+
+</resources>
